@@ -1,0 +1,11 @@
+endpoints:
+GET    /employees
+GET    /employees/{id}
+POST   /employees
+PUT    /employees/{id}
+PATCH  /employees/{id}
+DELETE /employees/{id}
+
+http://localhost:3000/employees?first_name=Sebastian
+
+http://localhost:3000/employees?q=codingthesmartway

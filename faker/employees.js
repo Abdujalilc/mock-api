@@ -1,0 +1,17 @@
+const { faker } = require('@faker-js/faker');
+function generateEmployees () {
+  var employees = []
+  for (var id = 0; id < 50; id++) {
+    var firstName = faker.person.firstName()
+    var lastName = faker.person.lastName()
+    var email = faker.internet.email()
+    employees.push({
+      "id": id,
+      "first_name": firstName,
+      "last_name": lastName,
+      "email": email
+    })
+  }
+  return { "employees": employees }
+}
+module.exports = generateEmployees
