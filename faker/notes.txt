@@ -3,6 +3,9 @@ npm init
 npm install --save-dev @faker-js/faker
 
 json-server employees.js
+json-server finance.js
+
+Type s + enter at any time to create a snapshot of the database
 
 
 

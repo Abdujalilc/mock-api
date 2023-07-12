@@ -1,5 +1,6 @@
 npm install -g json-server
 
-json-server --watch db.json
+json-server --watch employees.json
+json-server --watch finance.json --port 3001
 
 https://github.com/typicode/json-server
