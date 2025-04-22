@@ -1,0 +1,18 @@
+- Add: POST `/employees` with JSON body (no `id` needed)  
+- Delete: DELETE `/employees/{id}`  
+- Update: PATCH or PUT `/employees/{id}` with updated fields
+
+-------------------------------------------
+//POST
+curl -X POST -H "Content-Type: application/json" -d '{"first_name":"Anna","last_name":"Smith","email":"anna@example.com"}' http://localhost:3000/employees
+
+//DELETE
+curl -X DELETE http://localhost:3000/employees/1
+
+//PATCH
+curl -X PATCH -H "Content-Type: application/json" -d '{"email":"new@example.com"}' http://localhost:3000/employees/1
+
+//PUT
+curl -X PUT -H "Content-Type: application/json" \
+-d '{"id":1,"first_name":"Leo","last_name":"Cummings","email":"updated@example.com"}' \
+http://localhost:3000/employees/1
